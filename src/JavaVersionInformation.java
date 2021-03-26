@@ -9,8 +9,8 @@ public class JavaVersionInformation
         System.out.println("java.specification.version=" + version);
         version = System.getProperty("java.runtime.version");
         System.out.println("java.runtime.version=" + version);
-        // Runtime.Version only works for JDK 9 and newer
-        Runtime.Version runTimeVersion = Runtime.version();
+        // java.lang.Runtime.Version only works for JDK 9 and newer
+        java.lang.Runtime.Version runTimeVersion = Runtime.version();
         System.out.println("RunTime.Version=" + runTimeVersion);
         System.out.println("RunTime.Version.feature()=" + runTimeVersion.feature()); // major version
     }
